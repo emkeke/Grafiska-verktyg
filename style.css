@@ -53,13 +53,11 @@ nav img {
     width: 120px;
 }
 
-#logg-in-btn {
+#logg-in-btn-sm {
     background-color: var(--green);
     color: white;
-}
-
-.collapse {
-    width: 40%;
+    margin-left: 10%;
+    margin-top: 10%;
 }
 
 .nav-item:hover {
@@ -228,6 +226,10 @@ nav img {
     color:var(--blue);
 }
 
+.gear a:hover {
+    color:var(--green);
+}
+
 .gear-wrapper img {
     margin-left: 15%;
 }
@@ -250,6 +252,10 @@ nav img {
 
 .circles a {
     color: white;
+}
+
+.circles a:hover {
+    color: var(--green);
 }
 
 /*                 SIXTH SECTION               */
@@ -279,7 +285,62 @@ nav img {
     width: 10%;
 }
 
-@media only screen and (min-width: 992px){
+#lg-screen-nav{
+    display: none;
+}
+
+.svg-color img {
+    color: var(--light-blue);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(17, 17, 17, 0.856);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--light-blue);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: var(--green);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+@media only screen and (min-width: 1002px){
+    #logg-in-btn-lg {
+        background-color: var(--green);
+        color: white;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    #lg-screen-nav {
+        display: inline-block;
+        width: 60%;
+        display: flex;
+        justify-content: end;
+    }
     .hero {
         height: 570px;
     }
@@ -309,4 +370,6 @@ nav img {
         width: 5%;
     }
 } 
+
+  
 
