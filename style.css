@@ -64,8 +64,6 @@ nav img {
 
 .nav-item:hover {
     border: 2px solid var(--light-green);
-    padding: 3px;
-
 }
 
 /*              FIRST SECTION                */
