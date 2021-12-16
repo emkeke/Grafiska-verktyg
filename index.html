@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>a Lån & övrig finansiering</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container">
+                <div class="logo-wrapper">
+                    <a href="https://www.almi.se/"><img src="fonts/almi-logo.svg" id="font-logo" alt=""></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sök <img src="fonts/search.svg" class="arrow" alt="Search image"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Almi Invest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">In English <img src="fonts/globe.svg" class="arrow" alt="Globe image"></a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="#">Link</a> -->
+                            <button id="logg-in-btn">Logga in <img src="fonts/padlock.svg" class="arrow" alt="Padlock image"></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>      
+    </header>
+    <main>
+        <section>
+            <div class="who-is-almi">
+                <div class="container">
+                    <h3 id="blue-banner">Företagslån för växande företag</h3>
+                </div>
+            </div>
+        </section>
+        <section class="hero">         
+            <div class="container">
+                <div class="hero-btn">
+                    <span><a href="#"id="loan-btn">Ansök om Lån</a></span> 
+                </div>
+            </div>
+        </section>
+        <section class="chat-aria"> 
+            </div>
+            <span>
+                <img src="fonts/chat.svg" alt="ImBox launcher" class="open-button" onclick="openForm()">
+            </span>
+            <!-- <button class="open-button" onclick="openForm()">Chat</button> -->
+            
+            <div class="chat-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <img src="img/glad-man.bättre.png" id="happy-man" alt="Happy man">
+              
+                  <label for="msg"><b>Chatta med Marcus</b></label>
+                  <textarea placeholder="Type message.." name="msg" required></textarea>
+              
+                  <button type="submit" class="btn">Send</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+        </section>
+        <section class="pussel">
+            <div class="container">
+                <div class="row flex-row-reverse align-items-center">
+                    <div class="p-4 col-md-6">
+                        <div class="pussel-wrapper">
+                            <img src="fonts/pussel.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-md-5 mb-md-5">
+                        <h4>Få ihop företagspusslet med Almi</h4>
+                        <p class="bold-text">Ska du göra verklighet av din idé men kan inte få ihop företagspusslet? 
+                        Vill du bygga ett företag som är lönsamt, växande och långsiktigt hållbart?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 p-3">
+                        <div class="how-img">
+                            <h4 class="how-why">Vad vi kan erbjuda dig</h4>
+                        </div>
+                        <div class="who-why-wrapper p-3 green">
+                            <h5>Erbjuder stöttning och vägledning.</h5>
+                            <p>Våra rådgivare har lång erfarenhet av att vägleda entreprenörer i tillväxtföretag.</p>
+                            
+                            <h5>Inget eget vinstintresse.</h5>    
+                            <p>Vi har jobbat nära företag sedan 1994, vilket har lärt oss en hel del om vad som krävs för att lyckas. 
+                            Som statlig bolag har vi dessutom inget vinstintresse, 
+                            så du kan vara säker på att vi sätter ditt företags utveckling främst. <a href="#">Läs mer om vad Amli kan erbjuda dig <img src="fonts/arrow.svg" class="arrow" alt="arrow"> </a> </p>
+                        </div>                        
+                    </div>
+                    <div class="col-md-6 p-3">
+                        <div class="who-why-img">
+                            <h4 class="how-why">Vem kan söka våra lån?</h4>
+                        </div>
+                        <div class="who-why-wrapper p-3 g-light">
+                            <h5>Vem kan söka våra lån</h5>
+                            <p class="text-bold">Våra lån vänder sig till företag med upp till 250
+                            anställda i alla branscher.</p>
+                            <h5>Våra lånekriterier</h5>
+                            <p>Vår finansiella bedömning baseras på företagets  möjligheter och det viktigaste är att 
+                            det finns möjlighet till utveckling och lönsamhet. 
+                            Viktigt är också entreprenörens och företagets förmåga att utveckla 
+                            och förvalta affärsidén eller investeringen. <a href="#">Läs mer om våra kriterier <img class="arrow" src="fonts/arrow.svg" alt="arrow"> </a></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gear">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="gear-wrapper pt-4">
+                            <img src="fonts/gear-banner.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <a href="#">    
+                            <h3 class="text-center">Uppstartslån</h3>
+                            <p>- För företag som inte varit verksamma mer än tre år 
+                            har Almi tagit fram tre fördelaktiga uppstartslån. <img src="fonts/arrow.svg" class="arrow" alt="arrow"></p>
+                        </a>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <section class="circles">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-2">
+                        <div class="g-light">
+                            <div class="circle-wrapper">
+                                <img src="fonts/loan-1.svg" alt="">
+                            </div>
+                            <div class="blue-bg p-3">
+                                <h3 class="text-center">Låna 10 000 kr</h3>
+                                <ul>
+                                    <li class="p-2">3 månaders återbetalningsperiod.</li>
+                                    <li class="p-2">Fast amorteringsavgift på 500 kr/månaden.</li>
+                                    <li class="p-2">Fast ränta på 5%.</li>
+                                    <a href="#" class="p-2">Läs mer om uppstartslån <img src="fonts/arrow.svg" class="arrow " alt="arrow"> </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <div class="g-light">
+                            <div class="circle-wrapper">
+                                <img src="fonts/loan-2.svg" alt="">
+                            </div>
+                            <div class="blue-bg p-3">
+                                <h3 class="text-center">Låna 25 000 kr</h3>
+                                <ul>
+                                    <li class="p-2">6 månaders återbetalningsperiod.</li>
+                                    <li class="p-2">Fast amorteringsavgift på 500 kr/månaden.</li>
+                                    <li class="p-2">Fast ränta på 5%.</li>
+                                    <a href="#" class="p-2">Läs mer om uppstartslån <img src="fonts/arrow.svg" class="arrow " alt="arrow"> </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <div class="g-light">
+                            <div class="circle-wrapper">
+                                <img src="fonts/loan3.svg" alt="">
+                            </div>
+                            <div class="blue-bg p-3">
+                                <h3 class="text-center">Låna 50 000 kr</h3>
+                                <ul>
+                                    <li class="p-2">12 månaders återbetalningsperiod.</li>
+                                    <li class="p-2">Fast amorteringsavgift på 500 kr/månaden.</li>
+                                    <li class="p-2">Fast ränta på 5%.</li>
+                                    <a href="#" class="p-2">Läs mer om uppstartslån <img src="fonts/arrow.svg" class="arrow " alt="arrow"> </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="person mb-4">
+            <div class="container md-green">
+                <div class="row align-items-center  mt-md-4 mb-md-4">
+                    <div class="col-sm-12 col-md-4 pl-md-0">
+                        <div class="story-img">
+                            <!-- <img src="img/kvinna-hex-blue.jpg" class="img-fluid" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <div class="story-wrapper p-3">
+                            <p>Almi hjälpte mig att starta upp min restaurang och erbjuder bra 
+                            stöttning av deras kunniga personal med lång erfarenhet.
+                            Mitt företag idag fortsätter växa och det känns extra bra
+                            göra det via Almi som verkligen ser småföretagens möjligheter,
+                            men även att det sköts på ett miljömedvetet sätt.</p>
+            
+                            <a href="#">Läs mer om Anna-Paulas berättelse <img class="arrow" src="fonts/arrow.svg" alt="arrow"> </a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <section class="contact">
+            <div class="container light-blue">
+                <h2 id="contact-h2" class="text-center">Kontakta oss</h2>
+                <div class="row p-md-2">
+                    <div class="col-md-4">
+                        <h3 class="text-md-center">Våra tjänster</h3>
+                        <div class="d-md-flex justify-content-md-center">
+                            <ul>
+                                <li><a href="#">Affärsutveckling<img src="fonts/arrow.svg" class="arrow" alt="arrow"></a></li>
+                                <li><a href="#">Lån<img src="fonts/arrow.svg" class="arrow" alt="arrow"></a></li>
+                                <li><a href="#">Riskkapital<img src="fonts/arrow.svg" class="arrow" alt="arrow"></a></li>
+                            </ul>
+                        </div>                       
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="text-md-center">Kort om Almi</h3>
+                        <div class="d-md-flex justify-content-md-center">
+                            <ul>
+                                <li><a href="#">Karriär<img src="fonts/arrow.svg" class="arrow" alt="arrow"></a></li>
+                                <li><a href="#">Om webbplatsen<img src="fonts/arrow.svg" class="arrow" alt="arrow"></a></li>
+                                <li><a href="#">Hållbarhet<img src="fonts/arrow.svg" class="arrow" alt="arrow"></a></li>
+                            </ul>
+                        </div>               
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="text-md-center">Kontakt</h3>
+                        <div class="d-md-flex justify-content-md-center">
+                            <ul>
+                                <li><a href="#">Kontakta oss<img src="fonts/arrow.svg" class="arrow" alt="arrow"></a></li>
+                                <li><a href="#">Våra rådgivare<img src="fonts/arrow.svg" class="arrow" alt="arrow"></a></li>
+                                <li><a href="#">Almi invest<img src="fonts/arrow.svg" class="arrow" alt="arrow"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="social-media mt-2 text-center">
+                    <a href="#"><img src="fonts/facebook.svg" alt=""></a>
+                    <a href="#"><img src="fonts/linkedin-rund.svg" alt=""></a>
+                    <a href="#"><img src="fonts/youtube-rund.svg" alt=""></a>
+                </div>
+            </div>
+
+        </footer>
+        
+    </main>
+    <!-- <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "60%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script> -->
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

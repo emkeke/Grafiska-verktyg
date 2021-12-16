@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    font-family: sofia pro;
+}
+ 
+:root {
+    --blue: #2819FF;
+    --green: #00BE5F;
+    --light-blue: #AAE6FF;
+    --light-green: #9BE5BE;
+    --light-grey: #E6E6E6;
+    --purple: #870AA0;
+}
+
+.g-light {
+    background-color: var(--light-green);
+}
+
+.light-blue {
+    background-color: var(--light-blue);
+}
+
+.light-grey {
+    background-color: var(--light-grey);
+}
+
+.blue-bg {
+    background-color: var(--blue);
+    color: white;
+}
+
+.arrow {
+    width: 20px;
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+/*        NAVIGATION        */
+
+nav {
+    background-color: var(--light-grey);
+}
+.logo-wrapper {
+    width: 40%;
+}
+nav img {
+    width: 120px;
+}
+
+#logg-in-btn {
+    background-color: var(--green);
+    color: white;
+}
+
+.collapse {
+    width: 40%;
+}
+
+.nav-item:hover {
+    border: 2px solid var(--light-green);
+    padding: 3px;
+
+}
+
+/*              FIRST SECTION                */
+
+#blue-banner {
+    padding-top: 3%;
+}
+
+.who-is-almi {
+    background-color: var(--blue);
+    padding-top: 63px;
+    padding-bottom: 1%;
+    color: white;
+    margin-bottom: 0px;
+}
+
+
+
+/*              SECOND SECTION               */
+.hero {
+    background-image: url(img/bakgrund-fixad.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+#loan-btn {
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    top: 350px;
+    left: 10%;
+    padding: 2%;
+    width: 60%;
+    text-align: center;
+} 
+
+/*       CHAT ARIA       */
+
+.chat-aria img {
+    width: 100px; 
+    height: 100px;
+    padding: 1%;
+}
+
+#happy-man {
+    background-color: var(--green);
+    border-radius: 60px;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    border-radius: 60px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+}
+  
+  /* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid var(--light-grey);
+    z-index: 9;
+}
+  
+  /* Add styles to the form container */
+.form-container {
+    max-width: 250px;
+    padding: 10px;
+    background-color: white;
+}
+  
+  /* Full-width textarea */
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: var(--light-grey);
+    resize: none;
+    min-height: 200px;
+}
+  
+  /* When the textarea gets focus, do something */
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+  /* Set a style for the submit/send button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+  /* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+  
+  /* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+
+/*                    THIRD SECTION              */
+
+.pussel-wrapper{
+    width: 50%;
+    margin: auto;
+
+}
+/*                   FOURTH SECTION      */
+
+.who-why-img {
+    background-image: url(img/why4.jpg);
+    background-size: cover;
+    width: 300;
+    height: 310px;
+}
+
+.how-why{
+    text-align: center;
+    padding-top: 35%; 
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.who-why-wrapper p a {
+    margin-top: 100px;
+}
+
+.how-img {
+    background-image: url(img/how-cut.jpg);
+    background-size: cover;
+    object-position: right;
+    height: 310px;
+    color: var(--blue);
+}
+
+.gear-wrapper {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.gear a {
+    text-decoration: none;
+    color:var(--blue);
+}
+
+.gear-wrapper img {
+    margin-left: 15%;
+}
+
+/*                FIFTH SECTION                */
+
+.circle-wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+.circles {
+    color: white;
+}
+
+.circles h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.circles a {
+    color: white;
+}
+
+/*                 SIXTH SECTION               */
+.story-img {
+    background-image: url(img/kvinna-hex-blue.jpg);
+    background-size: cover;
+    height: 310px;
+}
+
+.contact h2 {
+    padding: 5%;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--blue);
+}
+.contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/*                 SEVENTH SECTION             */
+
+.social-media img{
+    padding: 1%;
+    width: 10%;
+}
+
+@media only screen and (min-width: 992px){
+    .hero {
+        height: 570px;
+    }
+    
+    #loan-btn {
+        width: 40%;
+        top: 500px;
+        font-size: 1.8em;
+    }
+    #blue-banner {
+        padding-top: 2%;
+    }
+    .gear-wrapper img {
+        width: 80%;
+    }
+
+    .story-wrapper p {
+        font-size: 1.2em;
+        padding-right: 0;
+    }
+
+    .padd {
+        padding-left: 0;
+    }
+
+    .social-media img{
+        width: 5%;
+    }
+} 
+
