@@ -341,6 +341,9 @@ nav img {
         display: flex;
         justify-content: end;
     }
+    .lg-nav-hover a:hover {
+        color: var(--green);
+      }
     .hero {
         height: 570px;
     }
