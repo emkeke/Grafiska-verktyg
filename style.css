@@ -64,6 +64,48 @@ nav img {
     border: 2px solid var(--light-green);
 }
 
+#lg-screen-nav{
+    display: none;
+}
+
+.svg-color img {
+    color: var(--light-blue);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(17, 17, 17, 0.856);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--light-blue);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: var(--green);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
 /*              FIRST SECTION                */
 
 #blue-banner {
@@ -77,8 +119,6 @@ nav img {
     color: white;
     margin-bottom: 0px;
 }
-
-
 
 /*              SECOND SECTION               */
 .hero {
@@ -284,48 +324,6 @@ nav img {
     padding: 1%;
     width: 10%;
 }
-
-#lg-screen-nav{
-    display: none;
-}
-
-.svg-color img {
-    color: var(--light-blue);
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: rgba(17, 17, 17, 0.856);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: var(--light-blue);
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: var(--green);
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
 
 @media only screen and (min-width: 1002px){
     #logg-in-btn-lg {
